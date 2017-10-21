@@ -7,7 +7,7 @@ class EmailParser
 
   def self.new_by_name(emails)
     parser = self.new(emails)
-    parser.parse 
+    parser.parse
   end
 
   def self.parse
