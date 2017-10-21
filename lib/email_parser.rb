@@ -13,10 +13,10 @@ class EmailParser
   def self.create_by_name(emails)
     parser = self.create
     parser.emails = emails
-    parser
+    parser.parse 
   end
 
   def self.parse
-    self.create_by_name.split(/\s|\,\s/).uniq
+    self.split(/\s|\,\s/).uniq
   end
 end
