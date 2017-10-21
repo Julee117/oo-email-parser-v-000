@@ -13,7 +13,7 @@ class EmailParser
   def self.create_by_name(emails)
     parser = self.create
     parser.emails = emails
-    parser.parse 
+    parser.parse
   end
 
   def self.parse
